@@ -1,0 +1,117 @@
+.exp-container{
+    margin: 4rem 0;
+    position: relative;
+    scroll-margin-top: 80px;
+}
+
+.exp-sections{
+    display: grid;
+    grid-template-columns: 0.5fr;
+    justify-content: center;
+}
+
+.exp-data{
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.exp-data:nth-child(1) { transition-delay: 0.1s; }
+.exp-data:nth-child(2) { transition-delay: 0.25s; }
+.exp-data:nth-child(3) { transition-delay: 0.4s; }
+
+.qualification-content.revealed .exp-data {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.exp-title{
+    font-size: 0.938rem;
+    font-weight: 500;
+}
+
+.exp-subtitle{
+    display: inline-block;
+    font-size: var(--small-font-size);
+    margin-bottom: 1rem;
+    opacity: 0.8;
+}
+
+.exp-calendar{
+    font-size: var(--small-font-size);
+    opacity: 0.7;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.timeline i{
+    font-size: 1.2rem;
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), color 0.3s ease;
+}
+
+.exp-data:hover .timeline i {
+    transform: scale(1.4);
+    color: var(--blue-link);
+}
+
+.exp-line{
+    display: block;
+    width: 2px;
+     height: 0%;
+    background: linear-gradient(to bottom, var(--bleu), rgba(255,255,255,0.3));
+    transform: translate(10px, 5px);
+    transition: height 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition-delay: 0.3s;
+}
+
+.qualification-content.revealed .exp-line {
+    height: 90%;
+}
+
+.exp-data > div:first-child,
+.exp-data > div:last-child {
+    transition: transform 0.3s ease;
+}
+
+.exp-data:hover > div:first-child,
+.exp-data:hover > div:last-child {
+    transform: translateX(2px);
+}
+
+@media (max-width: 1025px) {
+    .exp-content{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .exp-content{
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+    .exp-title {
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 600px) {
+    .exp-subtitle{
+        font-size: 11px;
+    }
+    .exp-sections{
+        grid-template-columns: initial;
+    }
+}
+
+@media (max-width: 350px) {
+    .exp-data{
+        gap: 0.5rem;
+    }
+}

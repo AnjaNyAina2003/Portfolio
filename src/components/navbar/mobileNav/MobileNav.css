@@ -1,0 +1,84 @@
+.mobile-menu{
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999 !important;
+  opacity: 0;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  transition: opacity 0.35s ease;
+  pointer-events: none;
+}
+
+.mobile-menu.active{
+  opacity: 1;
+  pointer-events: all;
+}
+
+.mobile-menu-container{
+  width: 72vw;
+  max-width: 320px;
+  height: 100vh;
+  background: linear-gradient(160deg, #07234d 0%, #030f26 100%);
+  border-right: 1px solid rgba(15, 82, 186, 0.3);
+  padding: 2rem;
+  transform: translateX(-100%);
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  box-shadow: 4px 0 40px rgba(0,0,0,0.5);
+}
+
+.mobile-menu.active .mobile-menu-container{
+  transform: translateX(0);
+}
+
+.logoMobile{
+  width: 9rem;
+  height: auto;
+  margin-bottom: 2.5rem;
+}
+
+.mobile-menu ul{
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  list-style: none;
+}
+
+.mobile-menu ul li {
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+  transform: translateX(-20px);
+  opacity: 0;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.mobile-menu.active ul li:nth-child(1) { transition-delay: 0.05s; transform: translateX(0); opacity: 1; }
+.mobile-menu.active ul li:nth-child(2) { transition-delay: 0.1s;  transform: translateX(0); opacity: 1; }
+.mobile-menu.active ul li:nth-child(3) { transition-delay: 0.15s; transform: translateX(0); opacity: 1; }
+.mobile-menu.active ul li:nth-child(4) { transition-delay: 0.2s;  transform: translateX(0); opacity: 1; }
+.mobile-menu.active ul li:nth-child(5) { transition-delay: 0.25s; transform: translateX(0); opacity: 1; }
+.mobile-menu.active ul li:nth-child(6) { transition-delay: 0.3s;  transform: translateX(0); opacity: 1; }
+
+.mobile-menu .menu-item {
+  display: block;
+  padding: 1rem 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--white);
+  text-decoration: none;
+  transition: color 0.2s ease, padding-left 0.2s ease;
+}
+
+.mobile-menu .menu-item:hover {
+  color: var(--blue-link);
+  padding-left: 0.75rem;
+}
+
+@media (max-width: 769px) {
+  .mobile-menu{
+    display: block;
+  }
+}

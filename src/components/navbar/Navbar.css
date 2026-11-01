@@ -1,0 +1,116 @@
+.nav-wrapper{
+    background: rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(50px);
+    border-bottom: 1px solid transparent;
+}
+
+.nav-content{
+    max-width: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    margin: 0 auto;
+}
+
+.logo{
+    width: 10rem;
+    height: auto;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.nav-content ul{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    list-style: none;
+}
+
+.nav-content li{
+    margin: 0 1.5rem;
+}
+
+.menu-item{
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--white);
+    position: relative;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.menu-item::before{
+    content: " ";
+    width: 2rem;
+    height: 0.2rem;
+    background: var(--gradient-bleu);
+    border-radius: 0.5rem;
+    position: absolute;
+    bottom: -0.6rem;
+    opacity: 0;
+    transform: translateX(-1.5rem);
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.menu-item:hover::before, .menu-item.active-link::before{
+    width: 100%;
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.menu-item.active-link {
+    color: var(--blue-link);
+}
+
+.menu-btn{
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 0.4rem;
+    color: var(--white);
+    background: var(--gradient-bleu);
+    line-height: 0;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    display: none;
+}
+
+.menu-btn:hover{
+    color: var(--bleu);
+    background: #000;
+    border: 1px solid var(--bleu);
+}
+
+@media (max-width: 600px) {
+    .logo{
+        width: 10rem;
+        margin-left: 5rem;
+    }
+}
+
+@media (max-width: 769px) {
+    .menu-btn{
+        display: block;
+    }
+
+    .nav-content ul{
+        display: none;
+    }
+}
+
+@media (max-width:1325px) {
+    .nav-wrapper{
+        padding: 0 2rem;
+    }
+}

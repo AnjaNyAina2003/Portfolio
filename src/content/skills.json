@@ -1,0 +1,142 @@
+{
+  "categories": [
+    {
+      "titre": "Langages",
+      "icone": "fa-solid fa-code",
+      "competences": [
+        {
+          "nom": "HTML5",
+          "logo": "/assets/logo/langage/html.svg",
+          "niveau": "niv. avancé"
+        },
+        {
+          "nom": "CSS3",
+          "logo": "/assets/logo/langage/css.svg",
+          "niveau": "niv. avancé"
+        },
+        {
+          "nom": "Javascript",
+          "logo": "/assets/logo/langage/javascript.svg",
+          "niveau": "niv. intermediaire"
+        },
+        {
+          "nom": "Python",
+          "logo": "/assets/logo/langage/python.svg",
+          "niveau": "niv. intermediaire"
+        },
+        {
+          "nom": "PHP",
+          "logo": "/assets/logo/langage/php.svg",
+          "niveau": "niv. intermediaire"
+        },
+        {
+          "nom": "Java",
+          "logo": "/assets/logo/langage/java.svg",
+          "niveau": "niv. intermediaire"
+        },
+        {
+          "nom": "Dart",
+          "logo": "/assets/logo/langage/dart.svg",
+          "niveau": "niv. intermediaire"
+        }
+      ]
+    },
+    {
+      "titre": "Frameworks",
+      "icone": "fa-solid fa-cubes",
+      "competences": [
+        {
+          "nom": "React.js",
+          "logo": "/assets/logo/langage/react.svg",
+          "niveau": "niv. avancé"
+        },
+        {
+          "nom": "Django",
+          "logo": "/assets/logo/langage/django.svg",
+          "niveau": "niv. intermediaire"
+        },
+        {
+          "nom": "Flutter",
+          "logo": "/assets/logo/langage/flutter.svg",
+          "niveau": "niv. débutant"
+        }
+      ]
+    },
+    {
+      "titre": "Bibliothèques",
+      "icone": "fa-solid fa-puzzle-piece",
+      "competences": [
+        {
+          "nom": "Bootstrap",
+          "logo": "/assets/logo/langage/bootstrap.svg"
+        },
+        {
+          "nom": "Jquery",
+          "logo": "/assets/logo/langage/jquery.svg"
+        },
+        {
+          "nom": "Django Rest Framework",
+          "logo": "/assets/logo/langage/django.svg"
+        }
+      ]
+    },
+    {
+      "titre": "Base de données",
+      "icone": "fa-solid fa-database",
+      "competences": [
+        {
+          "nom": "MySQL",
+          "logo": "/assets/logo/langage/mysql.svg",
+          "niveau": "niv. intermediaire"
+        },
+        {
+          "nom": "PostgreSQL",
+          "logo": "/assets/logo/langage/postgresql.svg",
+          "niveau": "niv. intermediaire"
+        }
+      ]
+    },
+    {
+      "titre": "Logiciels",
+      "icone": "fa-solid fa-desktop",
+      "competences": [
+        {
+          "nom": "Git",
+          "logo": "/assets/logo/tools/gitlab.svg",
+          "niveau": "niv. intermediaire"
+        },
+        {
+          "nom": "Photoshop",
+          "logo": "/assets/logo/tools/adobe-photoshop.svg",
+          "niveau": "niv. intermediaire"
+        },
+        {
+          "nom": "Adobe Premiere Pro",
+          "logo": "/assets/logo/tools/premiere-pro-cc.svg",
+          "niveau": "niv. débutant"
+        }
+      ]
+    },
+    {
+      "titre": "Langues",
+      "icone": "fa-solid fa-language",
+      "competences": [
+        {
+          "nom": "Malagasy",
+          "logo": "/assets/logo/flag/mg.svg",
+          "niveau": "Langue Maternelle"
+        },
+        {
+          "nom": "Français",
+          "logo": "/assets/logo/flag/fr.svg",
+          "niveau": "niv. courant"
+        },
+        {
+          "nom": "Anglais",
+          "logo": "/assets/logo/flag/us.svg",
+          "niveau": "niv. intermediaire"
+        }
+      ]
+    }
+  ]
+}

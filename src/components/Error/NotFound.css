@@ -1,0 +1,70 @@
+.error-container {
+  background: #080C14;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.error-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2.5rem 3rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(12px);
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+}
+
+.unauth{
+  border: 1px solid rgba(248, 56, 56, 0.2);
+}
+
+.expired{
+  border: 1px solid rgba(56, 189, 248, 0.2);
+}
+
+.notFound{
+  border: 1px solid rgba(248, 162, 56, 0.2);
+}
+
+.unauth-icon {
+  font-size: 2.5rem;
+  color: #f83838;
+}
+
+.expired-icon {
+  font-size: 2.5rem;
+  color: #38BDF8;
+}
+
+.notFound-icon {
+  font-size: 2.5rem;
+  color: #f87b38;
+}
+
+.error-card h1 {
+  font-family: "Space Grotesk", sans-serif;
+  color: #fff;
+  margin: 0;
+}
+
+.error-card p {
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0 0 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .error-card {
+    padding: 2rem 1.5rem;
+    margin: 0 1rem;
+    max-width: 22rem;
+    gap: 0.75rem;
+  }
+  .notFound-icon { font-size: 2rem; }
+  .error-card h1 { font-size: 1.6rem; }
+  .error-card p { font-size: 0.9rem; line-height: 1.5; }
+}

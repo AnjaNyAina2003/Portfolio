@@ -1,0 +1,144 @@
+# ─────────────────────────────────────────────────────────────
+#  Configuration de l'interface d'administration (Decap CMS)
+# ─────────────────────────────────────────────────────────────
+
+backend:
+  name: github
+  repo: TON-PSEUDO-GITHUB/NOM-DU-DEPOT   # <-- À REMPLACER (ex : anja/portfolio)
+  branch: main                            # <-- la branche déployée par l'hébergeur
+
+# Permet de tester l'admin en local (npx decap-server). Sans effet une fois en ligne.
+local_backend: true
+
+locale: fr
+
+# Les images/fichiers envoyés depuis l'admin vont dans ce dossier
+media_folder: public/assets/uploads
+public_folder: /assets/uploads
+
+collections:
+  - name: contenu
+    label: Contenu du portfolio
+    files:
+
+      # ───────────── Réglages généraux ─────────────
+      - name: settings
+        label: Réglages généraux
+        file: src/content/settings.json
+        fields:
+          - { name: nom, label: Nom affiché, widget: string, hint: "Utilisé dans « Bienvenue, je suis … »" }
+          - { name: nom_complet, label: Nom complet (pied de page), widget: string }
+          - { name: annee, label: Année du copyright, widget: string }
+          - name: phrases
+            label: Phrases animées de l'accueil
+            widget: list
+            hint: "Les phrases défilent les unes après les autres sous le titre."
+            field: { name: phrase, label: Phrase, widget: string }
+          - { name: photo, label: Photo de profil, widget: image }
+          - { name: logo, label: Logo, widget: image }
+
+      # ───────────── À propos ─────────────
+      - name: about
+        label: À propos
+        file: src/content/about.json
+        fields:
+          - name: bio
+            label: Présentation (un paragraphe par ligne)
+            widget: list
+            field: { name: paragraphe, label: Paragraphe, widget: text }
+          - name: cartes
+            label: Cartes d'information
+            widget: list
+            summary: "{{fields.titre}} : {{fields.valeur}}"
+            fields:
+              - { name: icone, label: Icône, widget: string, hint: "Classe Font Awesome, ex : fa-solid fa-award" }
+              - { name: titre, label: Titre, widget: string }
+              - { name: valeur, label: Valeur, widget: string }
+          - name: cv
+            label: Fichiers à télécharger (CV, lettre…)
+            widget: list
+            summary: "{{fields.label}}"
+            fields:
+              - { name: label, label: Nom affiché dans le choix, widget: string }
+              - { name: fichier, label: Fichier, widget: file }
+
+      # ───────────── Compétences ─────────────
+      - name: skills
+        label: Compétences
+        file: src/content/skills.json
+        fields:
+          - name: categories
+            label: Catégories
+            widget: list
+            summary: "{{fields.titre}}"
+            fields:
+              - { name: titre, label: Titre de la catégorie, widget: string }
+              - { name: icone, label: Icône, widget: string, hint: "Classe Font Awesome, ex : fa-solid fa-code" }
+              - name: competences
+                label: Compétences
+                widget: list
+                summary: "{{fields.nom}}"
+                fields:
+                  - { name: nom, label: Nom, widget: string }
+                  - { name: niveau, label: Niveau, widget: string, required: false, hint: "Ex : niv. avancé, niv. intermediaire, niv. débutant" }
+                  - { name: logo, label: Logo, widget: image, required: false }
+
+      # ───────────── Parcours ─────────────
+      - name: experiences
+        label: Parcours
+        file: src/content/experiences.json
+        fields:
+          - name: parcours
+            label: Étapes du parcours (de la plus ancienne à la plus récente)
+            widget: list
+            summary: "{{fields.periode}} · {{fields.titre}}"
+            fields:
+              - { name: titre, label: Titre, widget: string }
+              - { name: lieu, label: Établissement / entreprise, widget: string }
+              - { name: periode, label: Période, widget: string, hint: "Ex : 2022-2025" }
+              - name: type
+                label: Type
+                widget: select
+                default: formation
+                options:
+                  - { label: Formation, value: formation }
+                  - { label: Expérience professionnelle / stage, value: pro }
+
+      # ───────────── Projets ─────────────
+      - name: projets
+        label: Projets
+        file: src/content/projets.json
+        fields:
+          - name: projets
+            label: Projets
+            widget: list
+            summary: "{{fields.titre}} ({{fields.categorie}})"
+            fields:
+              - { name: titre, label: Titre, widget: string }
+              - { name: type, label: Type, widget: string, hint: "Ex : Application Web, Site Web, App mobile" }
+              - name: categorie
+                label: Catégorie (filtre)
+                widget: select
+                options: ["Conçus", "En cours"]
+              - { name: description, label: Description, widget: text }
+              - { name: image, label: Capture d'écran, widget: image }
+              - name: technologies
+                label: Technologies utilisées
+                widget: list
+                summary: "{{fields.nom}}"
+                fields:
+                  - { name: nom, label: Nom, widget: string }
+                  - { name: logo, label: Logo, widget: image, required: false }
+              - { name: lien_demo, label: Lien de la démo, widget: string, required: false, pattern: ['^https?://.+', "Le lien doit commencer par http:// ou https://"] }
+              - { name: lien_code, label: Lien du code source, widget: string, required: false, pattern: ['^https?://.+', "Le lien doit commencer par http:// ou https://"] }
+
+      # ───────────── Contact et réseaux ─────────────
+      - name: contact
+        label: Contact et réseaux
+        file: src/content/contact.json
+        fields:
+          - { name: email, label: Email, widget: string }
+          - { name: whatsapp, label: Numéro WhatsApp, widget: string, hint: "Format international, ex : +261340000000" }
+          - { name: facebook, label: Lien Facebook, widget: string, required: false, pattern: ['^https?://.+', "Le lien doit commencer par http:// ou https://"] }
+          - { name: linkedin, label: Lien LinkedIn, widget: string, required: false, pattern: ['^https?://.+', "Le lien doit commencer par http:// ou https://"] }
+          - { name: github, label: Lien GitHub, widget: string, required: false, pattern: ['^https?://.+', "Le lien doit commencer par http:// ou https://"] }

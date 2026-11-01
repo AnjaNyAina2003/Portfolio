@@ -1,0 +1,34 @@
+{
+  "bio": [
+    "Je suis un développeur web junior, diplômé en génie logiciel et base de données, passionné par la conception d'applications modernes et de solutions numériques efficaces.",
+    "Tout au long de mon parcours académique, j'ai développé des projets web en solo ou en equipe intégrant à la fois front-end et back-end.",
+    "Curieux, motivé et créatif, je suis toujours prêt à apprendre et à relever de nouveaux défis surtout au niveau développement web."
+  ],
+  "cartes": [
+    {
+      "icone": "fa-solid fa-graduation-cap",
+      "titre": "Formation",
+      "valeur": "Licence Bac+3"
+    },
+    {
+      "icone": "fa-solid fa-award",
+      "titre": "Diplôme",
+      "valeur": "Génie Logiciel"
+    },
+    {
+      "icone": "fa-solid fa-briefcase",
+      "titre": "Projets réalisés",
+      "valeur": "4 projets"
+    }
+  ],
+  "cv": [
+    {
+      "label": "CV Canva",
+      "fichier": "/assets/cv/CV Stage.png"
+    },
+    {
+      "label": "CV compatible avec l'ATS",
+      "fichier": "/assets/cv/Lettre de demande de stage Anja Ny Aina.pdf"
+    }
+  ]
+}

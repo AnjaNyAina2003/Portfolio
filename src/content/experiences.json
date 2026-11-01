@@ -1,0 +1,22 @@
+{
+  "parcours": [
+    {
+      "titre": "Bacc serie OSE",
+      "lieu": "Lycée Jules Ferry Faravohitra",
+      "periode": "2020-2021",
+      "type": "formation"
+    },
+    {
+      "titre": "Licence en Génie Logiciel et Base de données",
+      "lieu": "Institut INSIDE University Analakely",
+      "periode": "2022-2025",
+      "type": "formation"
+    },
+    {
+      "titre": "Stage en développement web",
+      "lieu": "Assurance ARO Antsahavola",
+      "periode": "2025",
+      "type": "pro"
+    }
+  ]
+}
