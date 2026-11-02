@@ -4,7 +4,7 @@
       "titre": "Police Assurance",
       "type": "Application Web",
       "categorie": "Conçus",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, magni sapiente necessitatibus laudantium laborum quos pariatur ut quaerat suscipit dolorum voluptates repellat dolore officia est molestias iusto iste minus autem.",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, magni sapiente necessitatibus laudantium laborum quos pariatur ut quaerat suscipit dolorum voluptates repellat dolore officia est molestias iusto iste minus autem. Police eee",
       "image": "/assets/images/interface/Police_generator.png",
       "technologies": [
         {
@@ -79,25 +79,6 @@
         {
           "nom": "html",
           "logo": "/assets/logo/langage/html.svg"
-        }
-      ],
-      "lien_demo": "",
-      "lien_code": ""
-    },
-    {
-      "titre": "Police_Generator",
-      "type": "Site Web",
-      "categorie": "Conçus",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, magni sapiente necessitatibus laudantium laborum quos pariatur ut quaerat suscipit dolorum voluptates repellat dolore officia est molestias iusto iste minus autem.",
-      "image": "/assets/images/interface/Police_generator.png",
-      "technologies": [
-        {
-          "nom": "css",
-          "logo": "/assets/logo/langage/css.svg"
-        },
-        {
-          "nom": "css",
-          "logo": "/assets/logo/langage/css.svg"
         }
       ],
       "lien_demo": "",
