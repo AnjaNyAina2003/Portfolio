@@ -76,25 +76,6 @@
       ],
       "lien_demo": "",
       "lien_code": ""
-    },
-    {
-      "titre": "One Piece Fanpage",
-      "type": "Site Web",
-      "categorie": "Conçus",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, magni sapiente necessitatibus laudantium laborum quos pariatur ut quaerat suscipit dolorum voluptates repellat dolore officia est molestias iusto iste minus autem.",
-      "image": "/assets/images/interface/One Piece.png",
-      "technologies": [
-        {
-          "nom": "html",
-          "logo": "/assets/logo/langage/html.svg"
-        },
-        {
-          "nom": "html",
-          "logo": "/assets/logo/langage/html.svg"
-        }
-      ],
-      "lien_demo": "",
-      "lien_code": ""
     }
   ]
 }
