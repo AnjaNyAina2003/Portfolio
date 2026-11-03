@@ -4,7 +4,7 @@
       "titre": "Police Assurance",
       "type": "Application Web",
       "categorie": "Conçus",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, magni sapiente necessitatibus laudantium laborum quos pariatur ut quaerat suscipit dolorum voluptates repellat dolore officia est molestias iusto iste minus autem. Police eee",
+      "description": "Une API REST visant à automatiser et à sécuriser le processus de génération des polices d’assurance, accompagnée d'une interface web complémentaire. Développée pour Assurance ARO, elle simplifie la gestion des souscripteurs et la génération des documents d’assurance.",
       "image": "/assets/images/interface/Police_generator.png",
       "technologies": [
         {
@@ -22,6 +22,10 @@
         {
           "nom": "Django",
           "logo": "/assets/logo/langage/django.svg"
+        },
+        {
+          "nom": "PostgreSQL",
+          "logo": "/assets/uploads/postgresql.svg"
         }
       ],
       "lien_demo": "",
@@ -31,7 +35,7 @@
       "titre": "InventStockManaging",
       "type": "Application Web",
       "categorie": "Conçus",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, magni sapiente necessitatibus laudantium laborum quos pariatur ut quaerat suscipit dolorum voluptates repellat dolore officia est molestias iusto iste minus autem.",
+      "description": "Application web de gestion de stock permettant de gérer les produits, les fournisseurs, les commandes et les mouvements de stock. InventStock offre une interface intuitive pour faciliter le suivi des marchandises et améliorer la gestion des inventaires.",
       "image": "/assets/images/interface/InventStock.png",
       "technologies": [
         {
@@ -41,25 +45,33 @@
         {
           "nom": "Django",
           "logo": "/assets/logo/langage/django.svg"
+        },
+        {
+          "nom": "PostgreSQL",
+          "logo": "/assets/uploads/postgresql.svg"
         }
       ],
       "lien_demo": "",
       "lien_code": ""
     },
     {
-      "titre": "Netflix Clône",
-      "type": "App mobile",
+      "titre": "EduSysManager",
+      "type": "Application Web",
       "categorie": "En cours",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, magni sapiente necessitatibus laudantium laborum quos pariatur ut quaerat suscipit dolorum voluptates repellat dolore officia est molestias iusto iste minus autem.",
       "image": "/assets/images/interface/Police_generator.png",
       "technologies": [
         {
-          "nom": "flutter",
-          "logo": "/assets/logo/langage/flutter.svg"
+          "nom": "React",
+          "logo": "/assets/uploads/react.svg"
         },
         {
-          "nom": "flutter",
-          "logo": "/assets/logo/langage/flutter.svg"
+          "nom": "Django",
+          "logo": "/assets/uploads/django.svg"
+        },
+        {
+          "logo": "/assets/uploads/postgresql.svg",
+          "nom": "PostgreSQL"
         }
       ],
       "lien_demo": "",

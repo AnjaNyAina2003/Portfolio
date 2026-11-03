@@ -1,6 +1,6 @@
 .mobile-menu{
   width: 100vw;
-  height: 100vh;
+  height: 110vh;
   display: none;
   background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
@@ -22,7 +22,7 @@
 .mobile-menu-container{
   width: 72vw;
   max-width: 320px;
-  height: 100vh;
+  height: 105vh;
   background: linear-gradient(160deg, #07234d 0%, #030f26 100%);
   border-right: 1px solid rgba(15, 82, 186, 0.3);
   padding: 2rem;
