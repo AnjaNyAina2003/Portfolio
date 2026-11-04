@@ -6,7 +6,10 @@
 
 .footer-container{
     padding: 2rem 0 2rem;
-    justify-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .footer-logo{
@@ -14,7 +17,6 @@
     justify-self: center;
     width: 10rem;
     height: auto;
-    margin-left: 46px;
     margin-bottom: 1rem;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
@@ -28,7 +30,6 @@
     display: flex;
     justify-content: center;
     column-gap: 1.25rem;
-    margin-left: 1rem;
 }
 
 .social-link,
@@ -70,7 +71,6 @@
 .footer-copy{
     display: block;
     margin-top: 0.5rem;
-    margin-left: 1rem;
     text-align: center;
     font-size: 0.75rem;
     opacity: 0.6;
@@ -85,8 +85,5 @@
     }
     .footer-copy{
         margin-top: 0.5rem;
-    }
-    .footer-logo{
-        margin-left: 40px;
     }
 }
