@@ -7,7 +7,7 @@ import settings from '../../content/settings.json'
 export default function About() {
     const [choixCV, setChoixCV] = useState(0);
 
-    const fileName = choixCV === about.cv[choixCV]?.fichier;
+    const fileName = about.cv[choixCV]?.fichier;
 
     const [toogleState, setToogleState] = useState(0)
     const toogleModal = (index) => {
