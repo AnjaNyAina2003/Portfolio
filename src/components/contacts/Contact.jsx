@@ -45,7 +45,7 @@ export default function Contacts() {
                 <i className="fa-solid fa-envelope"></i>
                 <h3 className='card-title'>Email</h3>
                 <span className='card-data'>{contact.email}</span>
-                <a href={`mail_vers:${contact.email}`} className='contact-btn'>Me contacter<i className="fa-solid fa-arrow-right-long"></i></a>
+                <a href={`mailto:${contact.email}`} className='contact-btn'>Me contacter<i className="fa-solid fa-arrow-right-long"></i></a>
               </div>
 
               <div className='contact-card'>
