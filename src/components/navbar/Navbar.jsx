@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import './Navbar.css'
-import MobileNav from './mobileNav/mobileNav';
+import MobileNav from './mobileNav/MobileNav';
 import settings from '../../content/settings.json';
 
 export default function Navbar() {

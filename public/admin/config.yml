@@ -4,8 +4,8 @@
 
 backend:
   name: github
-  repo: TON-PSEUDO-GITHUB/NOM-DU-DEPOT   # <-- À REMPLACER (ex : anja/portfolio)
-  branch: main                            # <-- la branche déployée par l'hébergeur
+  repo: AnjaNyAina2003/Portfolio   
+  branch: main                           
 
 # Permet de tester l'admin en local (npx decap-server). Sans effet une fois en ligne.
 local_backend: true
