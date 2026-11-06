@@ -58,7 +58,7 @@
       "titre": "EduSysManager",
       "type": "Application Web",
       "categorie": "En cours",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, magni sapiente necessitatibus laudantium laborum quos pariatur ut quaerat suscipit dolorum voluptates repellat dolore officia est molestias iusto iste minus autem.",
+      "description": "Application web de gestion scolaire qui centralise la vie d'un établissement : inscriptions, classes, emplois du temps, notes et bulletins, ainsi que les salaires du personnel. Chaque profil (administration, enseignants, parents, étudiants) dispose de son propre espace et de droits d'accès adaptés.",
       "image": "/assets/images/interface/Police_generator.png",
       "technologies": [
         {
