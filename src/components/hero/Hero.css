@@ -388,3 +388,9 @@
         height: 4rem;
     }
 }
+
+@media (min-width: 769px) and (orientation: portrait) {
+    .hero-container{
+        min-height: min(90vh, 35rem)
+    }
+}

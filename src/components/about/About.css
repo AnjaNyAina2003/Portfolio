@@ -180,6 +180,9 @@
     .bio-descri{
         padding: 0 2rem 0 0;
     }
+    .bio-descri p{
+        text-align: left;
+    }
 }
 
 @media (max-width: 768px) {
