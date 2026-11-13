@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
+import React, { useState, useCallback } from 'react'
 import './Projets.css'
 import projetsData from '../../content/projets.json'
+import Galerie from './galerie/Galerie'
 
 const PROJETS = projetsData.projets.map((projet, index) => ({ ...projet, id: index + 1 }));
 
@@ -26,6 +27,11 @@ export default function Projets() {
 
   const ouvrir = (url) => window.open(url, '_blank', 'noopener,noreferrer');
 
+  // Galerie de captures
+  const [galerieId, setGalerieId] = useState(0);
+  const fermerGalerie = useCallback(() => setGalerieId(0), []);
+  const projetGalerie = PROJETS.find((projet) => projet.id === galerieId);
+
   return (
     <section className="pro-container" id='projets'>
         <h2 className='section-title reveal'>Projets</h2>
@@ -39,6 +45,7 @@ export default function Projets() {
         <div className='pro-content grid'>
           {items.map((elem) => {
             const{id, titre, image, type, description, technologies, lien_demo, lien_code} = elem;
+            const captures = elem.captures || [];
             return (
               <div className='pro-card-container'>
                 <div className='pro-card' key={id}>
@@ -52,7 +59,8 @@ export default function Projets() {
                 </div>
                 <div className='btn-container'>
                   <button className='btn info-btn' onClick={() => toggleTab(id)}>Info</button>
-                 {lien_demo && <button className='btn demo-btn' onClick={() => ouvrir(lien_demo)}>Demo</button>}
+                  {captures.length > 0 && <button className='btn demo-btn' onClick={() => setGalerieId(id)}>Captures</button>}
+                  {lien_demo && <button className='btn demo-btn' onClick={() => ouvrir(lien_demo)}>Demo</button>}
                   {lien_code && <button className='btn demo-btn' onClick={() => ouvrir(lien_code)}>Code</button>}
                 </div>
                 <div className={toggleState === id ? "info-modal active-modal" : "info-modal"}
@@ -83,6 +91,14 @@ export default function Projets() {
             )
           })}
         </div>
+
+        {projetGalerie && (
+          <Galerie
+            titre={projetGalerie.titre}
+            captures={projetGalerie.captures}
+            onClose={fermerGalerie}
+          />
+        )}
     </section>
   )
 }

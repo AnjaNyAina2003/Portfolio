@@ -122,6 +122,15 @@ collections:
                 options: ["Conçus", "En cours"]
               - { name: description, label: Description, widget: text }
               - { name: image, label: Capture d'écran, widget: image }
+              - name: captures
+                label: Galerie de captures (bouton « Captures »)
+                widget: list
+                required: false
+                hint: "Ajoute plusieurs images : elles défilent avec deux flèches dans un grand popup. Sans image, le bouton n'apparaît pas."
+                summary: "{{fields.legende | default('Capture')}}"
+                fields:
+                  - { name: image, label: Image, widget: image }
+                  - { name: legende, label: Légende (facultative), widget: string, required: false }
               - name: technologies
                 label: Technologies utilisées
                 widget: list
