@@ -1,11 +1,7 @@
 {
   "projets": [
     {
-      "titre": "Police Assurance",
-      "type": "Application Web",
-      "categorie": "Conçus",
-      "description": "Une API REST visant à automatiser et à sécuriser le processus de génération des polices d’assurance, accompagnée d'une interface web complémentaire. Développée pour Assurance ARO, elle simplifie la gestion des souscripteurs et la génération des documents d’assurance.",
-      "image": "/assets/images/interface/Police_generator.png",
+      "lien_code": "https://github.com/AnjaNyAina2003/Police_Assurance",
       "technologies": [
         {
           "nom": "Html",
@@ -28,8 +24,34 @@
           "logo": "/assets/uploads/postgresql.svg"
         }
       ],
+      "captures": [
+        {
+          "image": "/assets/uploads/police_generator.png",
+          "legende": "Dashboard Admin"
+        },
+        {
+          "image": "/assets/uploads/police_assurance-1.png",
+          "legende": "Interface de gestion des clients"
+        },
+        {
+          "image": "/assets/uploads/police_assurance-2.png",
+          "legende": "Interface de génération de police d'assurance"
+        },
+        {
+          "image": "/assets/uploads/police_assurance-3.png",
+          "legende": "Interface de gestion d'utilisateur"
+        },
+        {
+          "image": "/assets/uploads/police_assurance-4.png",
+          "legende": "Interface de gestion de branche d'assurance"
+        }
+      ],
+      "titre": "Police Assurance",
+      "categorie": "Conçus",
+      "type": "Application Web",
+      "image": "/assets/images/interface/Police_generator.png",
       "lien_demo": "",
-      "lien_code": "https://github.com/AnjaNyAina2003/Police_Assurance"
+      "description": "Une API REST visant à automatiser et à sécuriser le processus de génération des polices d’assurance, accompagnée d'une interface web complémentaire. Développée pour Assurance ARO, elle simplifie la gestion des souscripteurs et la génération des documents d’assurance."
     },
     {
       "lien_code": "https://github.com/AnjaNyAina2003/InventStock",
@@ -48,6 +70,10 @@
         }
       ],
       "captures": [
+        {
+          "image": "/assets/uploads/iventstock.png",
+          "legende": "Dashboard"
+        },
         {
           "image": "/assets/uploads/iventstock-1-.png",
           "legende": "Interface de gestion des produits"
@@ -72,7 +98,7 @@
       "titre": "InventStockManaging",
       "categorie": "Conçus",
       "type": "Application Web",
-      "image": "/assets/images/interface/InventStock.png",
+      "image": "/assets/uploads/iventstock.png",
       "lien_demo": "",
       "description": "Application web de gestion de stock permettant de gérer les produits, les fournisseurs, les commandes et les mouvements de stock. InventStock offre une interface intuitive pour faciliter le suivi des marchandises et améliorer la gestion des inventaires."
     },
