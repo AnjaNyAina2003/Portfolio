@@ -379,6 +379,68 @@
     visibility: visible;
 }
 
+/* Boutons */
+
+.btn-captures,
+.btn-demo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.45rem;
+    width: auto;
+    min-width: 7rem;
+    padding: 0.5rem 1rem;
+}
+
+.btn-captures {
+    background: var(--bleu);
+    border: 1px solid var(--bleu);
+    color: var(--white);
+}
+
+.btn-captures:hover {
+    background: var(--bleu-claire);
+    border-color: var(--bleu-claire);
+    transform: translateY(-2px);
+}
+
+.btn-demo {
+    background: transparent;
+    border: 1px solid var(--blue-link);
+    color: var(--blue-link);
+}
+
+.btn-demo:hover {
+    background: rgba(126, 184, 255, 0.14);
+    transform: translateY(-2px);
+}
+
+.btn-code {
+    display: grid;
+    place-items: center;
+    width: 2.6rem;
+    height: 2.6rem;
+    padding: 0;
+    border-radius: 50%;
+    background: transparent;
+    border: 1px solid var(--white);
+    color: var(--white);
+    font-size: 1rem;
+}
+
+.btn-code:hover {
+    background: var(--white);
+    color: var(--bleu-fond);
+    transform: translateY(-2px);
+}
+
+.btn-captures:focus-visible,
+.btn-demo:focus-visible,
+.btn-code:focus-visible {
+    outline: 2px solid var(--blue-link);
+    outline-offset: 2px;
+}
+
 @media (max-width: 1025px) {
 }
 

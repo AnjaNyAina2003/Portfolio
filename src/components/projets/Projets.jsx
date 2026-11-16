@@ -59,9 +59,15 @@ export default function Projets() {
                 </div>
                 <div className='btn-container'>
                   <button className='btn info-btn' onClick={() => toggleTab(id)}>Info</button>
-                  {captures.length > 0 && <button className='btn demo-btn' onClick={() => setGalerieId(id)}>Captures</button>}
-                  {lien_demo && <button className='btn demo-btn' onClick={() => ouvrir(lien_demo)}>Demo</button>}
-                  {lien_code && <button className='btn demo-btn' onClick={() => ouvrir(lien_code)}>Code</button>}
+                  {captures.length > 0 && (
+                    <button className='btn btn-captures' onClick={() => setGalerieId(id)}>Galerie</button>
+                  )}
+                  {lien_demo && (
+                    <button className='btn demo-btn' onClick={() => ouvrir(lien_demo)}>Demo</button>
+                  )}
+                  {lien_code && (
+                    <button className='btn demo-btn' onClick={() => ouvrir(lien_code)}>Code</button>
+                  )}
                 </div>
                 <div className={toggleState === id ? "info-modal active-modal" : "info-modal"}
                 onClick={() => toggleTab(0)}

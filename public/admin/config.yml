@@ -123,7 +123,7 @@ collections:
               - { name: description, label: Description, widget: text }
               - { name: image, label: Capture d'écran, widget: image }
               - name: captures
-                label: Galerie de captures (bouton « Captures »)
+                label: Galerie de captures (bouton « Galerie »)
                 widget: list
                 required: false
                 hint: "Ajoute plusieurs images : elles défilent avec deux flèches dans un grand popup. Sans image, le bouton n'apparaît pas."
