@@ -71,7 +71,7 @@ export default function Contacts() {
 
               <div className='contact-div contact contact-form_area'>
                 <label className='contact-tag'>Projet</label>
-                <textarea name='projet' cols='30' rows='10' className='contact-form_input' placeholder='Ecrivez votre projet' required></textarea>
+                <textarea name='projet' cols='30' rows='10' className='contact-form_input' placeholder='Envoyez-moi un message' required></textarea>
               </div>
 
               <button type='submit' className='button'>Envoyer le message <i className="fa-solid fa-paper-plane"></i></button>

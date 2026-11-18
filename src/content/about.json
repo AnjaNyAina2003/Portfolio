@@ -24,11 +24,11 @@
   "cv": [
     {
       "label": "CV Canva",
-      "fichier": "/assets/uploads/cv-anja.pdf"
+      "fichier": "/assets/uploads/cv-anja-canva.pdf"
     },
     {
       "label": "CV compatible avec l'ATS",
-      "fichier": "/assets/cv/Lettre de demande de stage Anja Ny Aina.pdf"
+      "fichier": "/assets/uploads/cv-anja-ats.pdf"
     }
   ]
 }
